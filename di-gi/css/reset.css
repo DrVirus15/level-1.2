@@ -95,4 +95,5 @@ input, select {
 button{
     border: none;
     box-shadow: none;
+    cursor: pointer;
 }

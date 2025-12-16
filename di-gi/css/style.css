@@ -1,16 +1,22 @@
 :root {
     --text-coolor-white: #ffffff;
     --text-color-dark: #4A4A4A;
+    --background-color-dark: #2B4074;
+    --background-color-white: #FFFFFF;
+    --background-button-color: #F9F6E5;
     --text-font-family-main: 'Roboto Condensed', sans-serif;
     --text-font-famuly-buttons: 'Roboto', sans-serif;
+
 }
+
 .main {
     width: 1440px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .header {
-    background-color: #2B4074;
+    background-color: var(--background-color-dark);
     justify-content: space-between;
     align-items: center;
     padding-left: 153px;
@@ -23,7 +29,7 @@
     border-radius: 3px;
     width: 40px;
     height: 40px;
-    background-color: #ffffff;
+    background-color: var(--background-color-white);
 }
 
 .header__logo {
@@ -40,6 +46,7 @@
     letter-spacing: 0px;
     text-align: center;
     vertical-align: bottom;
+    position: relative;
     background-image: url('../images/bg-img.jpg');
     min-height: 668px;
     display: flex;
@@ -51,6 +58,7 @@
 .intro_text {
     font-family: var(--text-font-family-main);
     font-size: 24px;
+    font-weight: 400;
     width: 800px;
 }
 
@@ -58,6 +66,7 @@
     display: flex;
     justify-content: center;
     font-family: var(--text-font-family-main);
+    font-weight: 400;
     width: 400px;
     font-size: 96px;
     line-height: 96px;
@@ -68,12 +77,111 @@
 }
 
 .read_more_btn {
-    background-color: #2B4074;
+    background-color: var(--background-color-dark);
     text-transform: uppercase;
     border-radius: 3px;
     font-size: 18px;
+    font-weight: 400;
     font-family: var(--text-font-famuly-buttons);
     color: var(--text-coolor-white);
     width: 200px;
     height: 50px;
+}
+
+.carousel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrows {
+    position: absolute;
+    height: 141px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left_arrow_btn .material-symbols-sharp {
+    font-size: 50px;
+    color: var(--background-color-white);
+}
+
+.right_arrow_btn .material-symbols-sharp {
+    font-size: 50px;
+    color: #929292;
+}
+
+.left_arrow_btn {
+    background: var(--background-color-dark);
+    width: 70px;
+    height: 70px;
+    padding-top: 6px;
+    padding-left: 10px;
+}
+
+.right_arrow_btn {
+    background: var(--background-button-color);
+    width: 70px;
+    height: 70px;
+    padding-top: 6px;
+    padding-left: 10px;
+}
+
+.pagination {
+    width: 50px;
+}
+
+.indicator {
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    background-color: var(--background-color-white);
+    padding: 0;
+    border: 1px var(--background-color-white) solid;
+}
+
+.indicator.active {
+    background-color: transparent;
+    cursor: default;
+}
+
+.promo {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 4%;
+    padding-top: 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color-dark);
+}
+
+.buy_btn {
+    width: 200px;
+    height: 50px;
+    background: var(--background-button-color);
+    font: var(--text-font-famuly-buttons);
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+.cta_text_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.cta_text_wrapper h1.cta_text {
+    margin: 0;
+    font-weight: 500;
+    font-family: var(--text-font-famuly-buttons);
+    width: 100%;
+}
+.cta_text {
+    font-family: 'Dosis', sans-serif;
+    color: var(--text-coolor-white);
+    width: 60%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
