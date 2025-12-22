@@ -36,6 +36,12 @@
 <body class="main">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
+  <svg style="display: none;">
+    <symbol id="icon-info" viewBox="0 0 28 28">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M27.9811 13.7907C27.9811 21.4071 21.7173 27.5814 13.9906 27.5814C6.26378 27.5814 0 21.4071 0 13.7907C0 6.1743 6.26378 0 13.9906 0C21.7173 0 27.9811 6.1743 27.9811 13.7907ZM26.8619 13.7907C26.8619 20.7978 21.0992 26.4781 13.9906 26.4781C6.88193 26.4781 1.11924 20.7978 1.11924 13.7907C1.11924 6.78361 6.88193 1.10326 13.9906 1.10326C21.0992 1.10326 26.8619 6.78361 26.8619 13.7907ZM11.7521 11.0326V11.5842H12.8713V20.4102H11.7521V20.9618H12.8713H15.1098H16.229V20.4102H15.1098V11.0326H12.8713H11.7521ZM15.6694 8.27441C15.6694 9.18838 14.9178 9.9293 13.9906 9.9293C13.0633 9.9293 12.3117 9.18838 12.3117 8.27441C12.3117 7.36045 13.0633 6.61953 13.9906 6.61953C14.9178 6.61953 15.6694 7.36045 15.6694 8.27441Z" />
+    </symbol>
+  </svg>
   <section id="header" class="header">
     <img src="images/logo.png" alt="Digital Agency logo" class="header__logo">
     <button class="menu_button"><i class="fa-solid fa-bars"></i></button>
@@ -159,7 +165,7 @@
       <h1>Наші Проєкти</h1>
     </div>
     <div class="content">
-      <div class="portfolio_item">
+      <figure class="portfolio_item">
         <div class="portfolio_image_btn">
           <img src="images/content/portfolio-1.png" alt="portfolio-1.png" class="portfolio_image">
           <div class="hover_info">
@@ -169,9 +175,9 @@
             </a>
           </div>
         </div>
-        <h2 class="content_name">Lalique бутик</h2>
-      </div>
-      <div class="portfolio_item">
+        <figcaption class="content_name">Lalique бутик</figcaption>
+      </figure>
+      <figure class="portfolio_item">
         <div class="portfolio_image_btn">
           <img src="images/content/portfolio-2.png" alt="portfolio-2.png" class="portfolio_image">
           <div class="hover_info">
@@ -181,9 +187,9 @@
             </a>
           </div>
         </div>
-        <h2 class="content_name">Будівництво домів</h2>
-      </div>
-      <div class="portfolio_item">
+        <figcaption class="content_name">Будівництво домів</figcaption>
+      </figure>
+      <figure class="portfolio_item">
         <div class="portfolio_image_btn">
           <img src="images/content/portfolio-3.png" alt="portfolio-3.png" class="portfolio_image">
           <div class="hover_info">
@@ -193,9 +199,9 @@
             </a>
           </div>
         </div>
-        <h2 class="content_name">Кавʼярня</h2>
-      </div>
-      <div class="portfolio_item">
+        <figcaption class="content_name">Кавʼярня</figcaption>
+      </figure>
+      <figure class="portfolio_item">
         <div class="portfolio_image_btn">
           <img src="images/content/portfolio-4.png" alt="portfolio-4.png" class="portfolio_image">
           <div class="hover_info">
@@ -205,8 +211,8 @@
             </a>
           </div>
         </div>
-        <h2 class="content_name">Унікальні тури</h2>
-      </div>
+        <figcaption class="content_name">Унікальні тури</figcaption>
+      </figure>
     </div>
   </section>
   <section class="video_block">
@@ -230,36 +236,82 @@
       <figure class="news_block">
         <img src="images/latest-news-content/news-1.jpg" alt="news-1.jpg" class="news_image">
         <figcaption class="news_name">3Д в брендингу</figcaption>
+        <div class="news_info_shading"></div>
+        <button class="info_btn_wrapper">
+          <svg class="news_info_btn">
+            <use href="#icon-info"></use>
+          </svg>
+        </button>
       </figure>
       <figure class="news_block">
         <img src="images/latest-news-content/news-2.jpg" alt="news-2.jpg" class="news_image">
         <figcaption class="news_name">Контекстна реклама</figcaption>
+        <div class="news_info_shading"></div>
+        <button class="info_btn_wrapper">
+          <svg class="news_info_btn">
+            <use href="#icon-info"></use>
+          </svg>
+        </button>
       </figure>
       <figure class="news_block">
         <img src="images/latest-news-content/news-3.jpg" alt="news-3.jpg" class="news_image">
         <figcaption class="news_name">Графіка</figcaption>
-        <img src="images/content/info_button.svg" alt="info_button.svg" class="news_info_btn">
         <div class="news_info_shading"></div>
+        <button class="info_btn_wrapper">
+          <svg class="news_info_btn">
+            <use href="#icon-info"></use>
+          </svg>
+        </button>
       </figure>
       <figure class="news_block">
         <img src="images/latest-news-content/news-4.jpg" alt="news-4.jpg" class="news_image">
         <figcaption class="news_name">Корпоративна культура</figcaption>
+        <div class="news_info_shading"></div>
+        <button class="info_btn_wrapper">
+          <svg class="news_info_btn">
+            <use href="#icon-info"></use>
+          </svg>
+        </button>
       </figure>
       <figure class="news_block">
         <img src="images/latest-news-content/news-5.jpg" alt="news-5.jpg" class="news_image">
         <figcaption class="news_name">Унікальний дизайн</figcaption>
+        <div class="news_info_shading"></div>
+        <button class="info_btn_wrapper">
+          <svg class="news_info_btn">
+            <use href="#icon-info"></use>
+          </svg>
+        </button>
       </figure>
       <figure class="news_block">
         <img src="images/latest-news-content/news-6.jpg" alt="news-6.jpg" class="news_image">
         <figcaption class="news_name">Погляд зі сторони</figcaption>
+        <div class="news_info_shading"></div>
+        <button class="info_btn_wrapper">
+          <svg class="news_info_btn">
+            <use href="#icon-info"></use>
+          </svg>
+        </button>
       </figure>
       <figure class="news_block">
         <img src="images/latest-news-content/news-7.jpg" alt="news-7.jpg" class="news_image">
         <figcaption class="news_name">Соц мережі та їх користь</figcaption>
+        <div class="news_info_shading"></div>
+        <button class="info_btn_wrapper">
+          <svg class="news_info_btn">
+            <use href="#icon-info"></use>
+          </svg>
+        </button>
       </figure>
       <figure class="news_block">
         <img src="images/latest-news-content/news-8.jpg" alt="news-8.jpg" class="news_image">
         <figcaption class="news_name">Ексклюзивність</figcaption>
+        <div class="news_info_shading"></div>
+        <button class="info_btn_wrapper">
+          <svg class="news_info_btn">
+            <use href="#icon-info"></use>
+          </svg>
+        </button>
       </figure>
     </div>
   </section>
