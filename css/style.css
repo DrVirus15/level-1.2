@@ -1,7 +1,9 @@
 :root {
     --text-color-white: #ffffff;
     --text-color-dark: #4A4A4A;
+    --text-color-gray: #9B9B9B;
     --text-color-button-dark: #9b9b9b;
+    --text-color-button-white: #F9F6E5;
     --text-color-dark-blue: #2B4074;
     --background-color-dark: #2B4074;
     --background-color-white: #FFFFFF;
@@ -10,9 +12,13 @@
     --text-font-family-other: 'Roboto', sans-serif;
 }
 
-html {
+html:focus-within {
     scroll-behavior: smooth;
 }
+/*
+html {
+    scroll-behavior: smooth;
+}*/
 
 button {
     cursor: pointer;
