@@ -23,50 +23,40 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 100px;
     height: 8px;
+    width: 100px;
     background-color: var(--background-color-dark);
 }
 
-/* new version  */
+
 .news_content {
     margin: 50px;
     columns: 4;
     column-gap: 30px;
 }
+
+.news_block img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
 .news_block {
-    break-inside: inherit;
     margin-bottom: 30px;
-    display: flex;
     position: relative;
     overflow: hidden;
     align-self: self-start;
     width: 100%;
-}
-/*.news_content {
-    margin: 50px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-}   
-
-.news_block {
-    display: flex;
-    flex-direction: column;
-    align-self: self-start;
     border-radius: 3px;
-    overflow: hidden;
-    position: relative;
-}-- old version (works)*/
+}
 
 .news_info_shading {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    inset: 0;
+    opacity: 0;
     width: 100%;
     height: 100%;
-    opacity: 0;
     background-color: var(--background-color-dark);
     pointer-events: none;
 }
@@ -77,9 +67,8 @@
     fill: var(--background-color-white);
     width: 28px;
     height: 28px;
-    left: 50%;
-    bottom: 40%;
-    transform: translate(-50%, -50%);
+    inset: 0;
+    margin: auto;
 }
 
 .news_block:hover::after {
@@ -101,27 +90,20 @@
 }
 
 .news_block:hover .news_name {
-    bottom: 40px;
+    bottom: 10%;
     background-color: var(--background-color-dark);
     color: var(--text-color-button-white);
 }
 
 .news_name {
     position: absolute;
-    box-sizing: border-box;
     padding-left: 20px;
     bottom: 0;
-    left: 0;
     width: 100%;
-    height: 40px;
     line-height: 40px;
-    vertical-align: middle;
     font-family: var(--text-font-family-main-condensed);
     color: var(--text-color-dark);
-    text-align: left;
     background-color: var(--background-color-white);
-    font-size: 16px;
     font-weight: 700;
     letter-spacing: 2px;
-    margin: 0;
 }
