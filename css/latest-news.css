@@ -87,12 +87,14 @@
 
 .news_block:hover .news_info_shading {
     opacity: 0.3;
+    transition: all 0.5s ease;
 }
 
 .news_block:hover .news_name {
     bottom: 10%;
     background-color: var(--background-color-dark);
     color: var(--text-color-button-white);
+    transition: all 0.5s ease;
 }
 
 .news_name {
@@ -106,4 +108,5 @@
     background-color: var(--background-color-white);
     font-weight: 700;
     letter-spacing: 2px;
+    transition: all 0.5s ease;
 }

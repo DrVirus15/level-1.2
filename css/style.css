@@ -20,6 +20,10 @@ button {
     cursor: pointer;
 }
 
+section {
+    padding-left: 10%;
+    padding-right: 2%;
+}
 .hover_info a {
     text-decoration: none; 
     outline: none; 
