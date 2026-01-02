@@ -15,7 +15,7 @@
     --footer-border-color: #7EBF84;
 }
 
-html:focus-within {
+html {
     scroll-behavior: smooth;
 }
 
