@@ -551,6 +551,10 @@ p.cta_text {
     transition: all 0.5s ease;
 }
 
+.service_image, .item_name {
+    transition: all 0.5s ease;
+}
+
 .services__item:hover {
     outline: 4px solid var(--background-color-dark);
     outline-offset: -9px;
